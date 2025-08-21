@@ -278,7 +278,7 @@ def dashboard_page():
         with col2:
             credit = st.selectbox("Credit", [1, 2, 3, 4, 4.5])
         with col3:
-            grade_options  =  [4.00, 3.75, 3.50, 3.25, 3.00, 2.75, 2.50, 2.25, 2.00, 1.00, 0.00]
+            grade_options  =  [4.00, 3.75, 3.70, 3.50, 3.30, 3.25, 3.00, 2.75, 2.70, 2.50, 2.30, 2.25, 2.00, 1.70, 1.30, 1.00, 0.00]
             grade = st.selectbox("Grade", grade_options, format_func=lambda x: f"{x:.2f}")
         
         submitted = st.form_submit_button("Add Course")
@@ -371,4 +371,5 @@ def main():
         dashboard_page()
 
 if __name__ == "__main__":
+
     main()
