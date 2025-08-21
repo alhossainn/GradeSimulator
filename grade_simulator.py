@@ -306,7 +306,7 @@ def dashboard_page():
                                            key=f"edit_code_{i}_{course['id']}")
                 with col2:
                     new_credit = st.selectbox("Credit", [1, 2, 3, 4, 4.5, 9], 
-                                            index=[1, 2, 3, 4, 4.5].index(course["credit"]),
+                                            index=[1, 2, 3, 4, 4.5, 9].index(course["credit"]),
                                             key=f"edit_credit_{i}_{course['id']}")
                 with col3:
                     grade_labels = [f"{g:.2f}" for g in grade_options] 
@@ -373,4 +373,5 @@ def main():
 if __name__ == "__main__":
 
     main()
+
 
