@@ -8,3 +8,6 @@ GradeSimulator is a comprehensive academic performance tool that helps students 
  - **Set Academic Goals:** Determine what grades you need to achieve your target CGPA.
 
 It's intuitive interface makes it easy to manage your courses, experiment with **"what-if"** scenarios, and plan your academic journey with confidence. Whether you're aiming to maintain, improve, or understand your academic standing, GradeVision provides the insights you need to make informed decisions about your education.
+
+## Live Demo
+https://fzsesfqdhnxfckdkkj9apy.streamlit.app/
