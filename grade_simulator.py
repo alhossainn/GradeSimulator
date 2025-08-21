@@ -276,7 +276,7 @@ def dashboard_page():
         with col1:
             course_code = st.text_input("Course Code")
         with col2:
-            credit = st.selectbox("Credit", [1, 2, 3, 4, 4.5])
+            credit = st.selectbox("Credit", [1, 2, 3, 4, 4.5, 9])
         with col3:
             grade_options  =  [4.00, 3.75, 3.70, 3.50, 3.30, 3.25, 3.00, 2.75, 2.70, 2.50, 2.30, 2.25, 2.00, 1.70, 1.30, 1.00, 0.00]
             grade = st.selectbox("Grade", grade_options, format_func=lambda x: f"{x:.2f}")
@@ -305,7 +305,7 @@ def dashboard_page():
                     new_code = st.text_input("Course Code", value=course["code"], 
                                            key=f"edit_code_{i}_{course['id']}")
                 with col2:
-                    new_credit = st.selectbox("Credit", [1, 2, 3, 4, 4.5], 
+                    new_credit = st.selectbox("Credit", [1, 2, 3, 4, 4.5, 9], 
                                             index=[1, 2, 3, 4, 4.5].index(course["credit"]),
                                             key=f"edit_credit_{i}_{course['id']}")
                 with col3:
@@ -373,3 +373,4 @@ def main():
 if __name__ == "__main__":
 
     main()
+
